@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.about-desc {
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 75vh;
+}
+
+.about-image img {
+  width: 46vw;
+  height: 75vh;
+}
+
+.about-heading1 {
+  line-height: 7vh;
+}
+
+.container4 {
+  width: 60vw;
+  display: flex;
+}
+
+.about-desc1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-desc2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-desc2 p {
+  width: 450px;
+}
+
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  border: 2px solid red;
+  margin-top: 50px;
+}
+
+.about-red {
+  font-size: 50px;
+  color: red;
+  height: 50px;
+}
+
+.quote-inside-text {
+  font-size: 19px;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  text-align: center;
+  padding: 0 30px 30px 30px;
+}
+
+.choose {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 8vh;
+  font-weight: 600;
+}
+
+.choose h1 {
+  font-size: 8vh;
+  font-weight: 600;
+}
+.choose h2 {
+  color: red;
+  font-size: 5vh;
+  font-weight: 600;
+}
+
+.card-grid {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cards {
+  width: 20vw;
+  height: 20vh;
+}
+
+.inside-cards {
+  padding: 15px;
+  height: 50vh;
+  border: 2px solid black;
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+}
+
+.inside-cards:hover {
+  border: 2px solid red;
+  transform: scale(1.05);
+}
+
+.img-fit {
+  display: flex;
+  justify-content: center;
+}
+
+/* Form ... */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  opacity: 0.9;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  width: 50vw;
+  height: 76.2vh;
+  position: absolute;
+  z-index: 2;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.062);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form:hover {
+  border: 2px solid rgba(255, 0, 0, 0);
+  transform: scale(1.05);
+}
+
+.contact-form div {
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  background: transparent;
+  width: 43vw;
+}
+
+.contact-name {
+  margin: 5px;
+}
+
+.contact-name label {
+  color: white;
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.contact-name input {
+  color: white;
+  font-size: 3vh;
+  width: 70%;
+  border-bottom: 2px solid wheat;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: transparent;
+}
+
+.contact-email label {
+  color: white;
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.contact-email input {
+  color: white;
+  font-size: 3vh;
+  width: 70%;
+  border-bottom: 2px solid wheat;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: transparent;
+}
+
+.contact-msg {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-msg-text label {
+  color: white;
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.contact-msg textarea {
+  color: white;
+  width: 100%;
+  height: 20%;
+  padding: 3px;
+  font-size: 3vh;
+  border: 2px solid wheat;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.buttton-submit {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-submit {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgb(253, 24, 24);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: black;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-submit:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.heading {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20vh;
+  font-weight: 600;
+}
+
+.heading h1 {
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px black;
+  box-shadow: 20px 20px;
+  border-radius: 25px;
+}
