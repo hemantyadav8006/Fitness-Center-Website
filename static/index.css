@@ -5,6 +5,10 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+body {
+  animation: fadeInAnimation ease 2s;
+}
+
 header {
   background-color: rgb(26, 24, 24);
   position: sticky;
@@ -20,6 +24,7 @@ header {
   height: 85px;
   position: relative;
   justify-content: space-between;
+  transition: all 0.3s ease-in;
 }
 
 /* Navigation Bar : LOGO  */
@@ -50,6 +55,7 @@ header {
 
 #navbar div ul {
   display: flex;
+  transition: all 0.3s ease-in;
 }
 
 #navbar div ul li {
@@ -65,12 +71,12 @@ header {
   margin: 5px 22px;
   font-weight: bold;
   text-transform: uppercase;
+  transition: all 0.3s ease-in;
 }
 
 #navbar div ul li a:hover {
   color: red;
   box-shadow: 0 0 5px red, 0 0 5px rgb(223, 98, 98);
-  transition: 0.4s;
 }
 
 #navbar div ul li .active {
@@ -91,7 +97,7 @@ header {
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
-  transition: 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .hamburger::before,
@@ -102,7 +108,7 @@ header {
   right: 0;
   background: rgb(180, 174, 174);
   border-radius: 10px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .hamburger::before {
@@ -148,7 +154,7 @@ header {
 
 .navigation input:checked ~ .menu {
   right: 0;
-  transition: 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 /* Home */
@@ -373,8 +379,7 @@ header {
 
 /* blogs */
 #blog-home {
-  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
-    url(../static/backg3.jpg);
+  background-image: url(../static/backg3.jpg);
   width: 100%;
   height: 70vh;
   background-size: cover;
@@ -467,4 +472,94 @@ header {
 .blog-container .blog-post p {
   text-align: justify;
   padding-bottom: 60px !important;
+}
+
+/* services */
+
+#services-home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url(../static/backg4.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#services-home h2 {
+  color: #fff;
+  font-size: 3.2rem;
+  margin-top: -100px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.services-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 8vw 0 8vw 8vw;
+}
+
+.services-container .blogs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+}
+
+.services-container .blogs .post {
+  width: 30%;
+}
+
+.services-container .blogs img {
+  width: 100%;
+  border-radius: 19px;
+}
+
+.services-container .blogs .post {
+  padding-bottom: 60px;
+}
+
+.services-container .blogs .post h3 {
+  color: #29303b;
+  font-weight: 600;
+  padding: 15px 0 10px 0;
+}
+
+.services-container .blogs .post p {
+  color: #757373;
+  padding-bottom: 20px;
+}
+
+.services-container .blogs .post a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: red;
+  border: 1px solid;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+}
+
+.services-container .blogs .post a:hover {
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

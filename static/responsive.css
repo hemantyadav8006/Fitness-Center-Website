@@ -1,92 +1,89 @@
-@media (min-width: 1201px){
-    .container1 .join-width {
-        width: 33.333333%;
-        margin-top: 0px;
-    }
+@media (min-width: 1201px) {
+  .container1 .join-width {
+    width: 33.333333%;
+    margin-top: 0px;
+  }
 
-    .container1 .join-text-width {
-        width: 60%;
-        padding-right: 0px;
-    }
+  .container1 .join-text-width {
+    width: 60%;
+    padding-right: 0px;
+  }
 }
-
 
 @media (max-width: 1200px) {
+  /* NavBar */
+  .hamburger,
+  .toggle-menu {
+    display: block;
+    right: 24px;
+  }
 
-    /* NavBar */
-    .hamburger, .toggle-menu {
-        display: block;
-        right: 24px;
-    }
+  header {
+    padding: 10px 20px;
+  }
 
-    header {
-        padding: 10px 20px;
-    }
+  #logo img {
+    height: 40px;
+  }
 
-    #logo img{
-        height: 40px;
-    }
+  #logo span {
+    font-size: 15px;
+  }
 
-    #logo span{
-        font-size: 15px;
-    }
+  .menu {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: black;
+    width: 300px;
+    height: 100%;
+    padding-top: 65px;
+  }
 
-    .menu {
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        background: black;
-        width: 300px;
-        height: 100%;
-        padding-top: 65px;
-    }
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
 
-    .menu li {
-        width: 100%;
-    }
+  .menu li a {
+    color: black;
+    padding: 30px;
+    font-size: 25px;
+    box-shadow: 0 1px 0 rgba(67, 28, 28, 0.2) inset;
+    transition: all 0.3s ease-in;
+  }
 
-    .menu li a {
-        color: black;
-        padding: 30px;
-        font-size: 25px;
-        box-shadow: 0 1px 0 rgba(67, 28, 28, 0.2) inset;
-    }
+  .menu li a:hover {
+    border: none;
+  }
 
-    #navbar div ul li a:hover {
-        border-radius: 15px;
-        text-decoration: underline;
-    }
-    
-    /* Section1 */
+  /* Section1 */
 
-    .section-Text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .section {
-        flex-direction: column;
-        height: 640px;
-    }
-    
-    .gym-img {
-        width: 572px;
-        height: 344px;
-    }
+  .section-Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section {
+    flex-direction: column;
+    height: 640px;
+  }
 
-    /* Section2 */
-    .container1{
-        flex-direction: column;
-    }
+  .gym-img {
+    width: 572px;
+    height: 344px;
+  }
 
-    /* Footer */
-    .row {
-        flex-direction: column;
-    }
+  /* Section2 */
+  .container1 {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .row {
+    flex-direction: column;
+  }
 }
-
-
