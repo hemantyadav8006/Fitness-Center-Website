@@ -351,13 +351,15 @@ header {
 .footer-social {
   color: white;
   background: black;
-  border: 3px solid black;
+  border: 3px solid;
   border-radius: 7px;
+  transition: all 0.3s ease-in;
 }
 
 .footer-social:hover {
+  color: black;
   background: red;
-  border: 3px solid red;
+  border: 3px solid black;
 }
 
 .dumbal {
@@ -409,6 +411,8 @@ header {
 
 .blog-container .blogs {
   width: 60%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .blog-container .blogs img {
@@ -454,6 +458,8 @@ header {
 }
 
 .blog-container .cate h2 {
+  font-size: 2rem;
+  font-weight: 600;
   padding-bottom: 7px;
 }
 

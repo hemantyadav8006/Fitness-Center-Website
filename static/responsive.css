@@ -99,4 +99,128 @@
     gap: 1rem;
     align-items: center;
   }
+
+  .about-desc .about-image {
+    padding: 0;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
+  .container4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-desc2 .about-heading1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 9vh;
+  }
+
+  .about-desc2 p {
+    width: 100%;
+    padding: 0 31px;
+  }
+
+  .about-desc2 .quote-text {
+    margin-left: 20px;
+  }
+
+  /* services */
+
+  .services-container {
+    padding: 8vw 4vw 8vw 4vw;
+  }
+
+  .services-container .blogs .post {
+    width: 100%;
+  }
+
+  .services-container .blogs .post p {
+    text-align: justify;
+    padding-right: 8px;
+  }
+
+  /* price */
+
+  #price-home h2 {
+    font-size: 2.8rem;
+    margin-top: -150px;
+  }
+
+  /* blog  */
+
+  #blog-home h2 {
+    font-size: 2.8rem;
+  }
+
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-container .blogs {
+    width: 100%;
+  }
+
+  .blog-container .cate {
+    width: 100%;
+    text-align: justify;
+  }
+
+  /* about */
+
+  #about-home h2 {
+    font-size: 2.8rem;
+  }
+
+  .container4 .about-desc2 .about-desc1 {
+    justify-content: center;
+    font-size: 26px;
+  }
+
+  /* contact  */
+
+  .form {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-name,
+  .contact-email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-name label,
+  .contact-email label {
+    font-size: 3vh;
+  }
+
+  .contact-name input {
+    font-size: 2.5vh;
+    padding-left: 6px;
+    width: 80%;
+  }
+
+  .contact-email input {
+    font-size: 2.5vh;
+    padding-left: 6px;
+    width: 77%;
+  }
+
+  .contact-msg-text label {
+    font-size: 3vh;
+  }
+
+  .contact-msg textarea {
+    font-size: 2.5vh;
+    padding-left: 6px;
+    margin-top: 8px;
+  }
 }
