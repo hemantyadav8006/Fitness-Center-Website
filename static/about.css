@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   padding: 8vw 0 2vw 8vw;
+  width: 100%;
 }
 
 .about-image {
@@ -97,13 +98,9 @@
 }
 
 .choose {
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 100vh;
+  margin-bottom: 50px;
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
 }
 
 .contact-heading {
@@ -123,35 +120,62 @@
   font-weight: 600;
 }
 
-.card-grid {
+.choose {
+  margin-bottom: 50px;
+  padding: 8vw 4vw 2vw 4vw;
+  text-align: center;
+}
+
+.choose .expert-box {
   width: 100%;
-  height: 100vh;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 50px;
 }
 
-.cards {
-  width: 20vw;
-  height: 20vh;
-}
-
-.inside-cards {
-  padding: 15px;
-  height: 50vh;
-  border: 2px solid black;
-  transition: transform 0.5s, filter 1.5s ease-in-out;
-}
-
-.inside-cards:hover {
+.choose .expert-box .profile {
   border: 2px solid red;
-  transform: scale(1.05);
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
 }
 
-.img-fit {
+.choose .expert-box .profile h6 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.choose .expert-box .profile p {
+  text-align: justify;
+}
+
+.choose .expert-box .profile .pro-links {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+.choose .expert-box .profile .pro-links a {
+  margin-top: 10px;
+  padding: 10px 13px;
+  font-weight: 600;
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.choose .expert-box .profile .pro-links a:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
 }
 
 /* Form ... */
